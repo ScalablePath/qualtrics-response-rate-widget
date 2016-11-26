@@ -1,0 +1,56 @@
+<div class="page-header">
+    <h1>Rate Stats</h1>
+</div>
+<div class="form-inline">
+    <div class="form-group">
+        <select class="form-control" id="cmbSurvey">
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="cmbCountry">
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="cmbPartner">
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="cmbChannel">
+        </select>
+    </div>
+    <div class="input-group">
+    <input type="date" class="form-control" id="dtStartDate" placeholder="Start date..."/>
+    <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+    </div>
+    <div class="input-group">
+    <input type="date" class="form-control" id="dtEndDate" placeholder="End date..."/>
+    <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+    </div>
+    <div class="form-group pull-right">
+        <button class="btn btn-sm btn-primary" id="btnFilter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel panel-default">
+            <h3 class="text-center">
+                Response Rate<br>
+                <span id="ratePercentage" class="label label-success">
+                    *****
+                </span>
+            </h3>
+            <ul class="list-group">
+                <li class="list-group-item">Invites: <span class="badge" id="rateInvites"></span></li>
+                <li class="list-group-item">Partials: <span class="badge" id="ratePartials"></span></li>
+                <li class="list-group-item">Finished: <span class="badge" id="rateFinished"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="panel panel-default">
+            <div id="chart">
+            </div>
+        </div>
+    </div>
+</div>
